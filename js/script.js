@@ -16,7 +16,7 @@ function getPokemonlist() {
 }
 function showPokemonlist() {
   let listaPokemons = [];
-  fetch(BASEURL + "?limit=210").then((Response) => {
+  fetch(BASEURL + "?limit=1010").then((Response) => {
     if (Response.status == 200) {
       listaPokemons = Response.json().then((json) => {
         json.results.map((pokemon) => {

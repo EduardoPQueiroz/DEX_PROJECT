@@ -77,55 +77,7 @@ footer img{
     width: 2.5em;
 }
 /* fim do footer */
-/* button */
-#buttoncontainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.btn {
-    padding: 1.1em 2em;
-    background: none;
-    border: 2px solid #fff;
-    font-size: 15px;
-    color: #131313;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s;
-    border-radius: 12px;
-    background-color: #EDE7D9;
-    font-weight: bolder;
-    box-shadow: 0 2px 0 2px #000;
-    margin-bottom: 1.5em;
-   }
-   
-   .btn:before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 120%;
-    background-color: #090C9B;
-    top: 50%;
-    transform: skewX(30deg) translate(-150%, -50%);
-    transition: all 0.5s;
-   }
-   
-   .btn:hover {
-    background-color: #6B0F1A;
-    color: #fff;
-    box-shadow: 0 2px 0 2px #131313;
-   }
-   
-   .btn:hover::before {
-    transform: skewX(30deg) translate(150%, -50%);
-    transition-delay: 0.1s;
-   }
-   
-   .btn:active {
-    transform: scale(0.9);
-   }
-/* fim do button */
+
 #PokemonList{
     display: grid;
     grid-template: auto / 1fr 1fr 1fr;
@@ -139,6 +91,7 @@ li{
     background-color: #EDE7D9;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

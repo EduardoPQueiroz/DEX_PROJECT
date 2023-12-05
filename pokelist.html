@@ -7,7 +7,7 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="showPokemonlist()">
     <nav id="navbar">
         <a href="index.html">HOME</a> |
         <a href="">LISTA</a> |
@@ -16,11 +16,7 @@
     <section id="content">
         <div id="titlecontainer">
             <h1 id="title">POKEDEX</h1>
-        </div>
-        <div id="buttoncontainer">
-                <button class="btn" onclick="showPokemonlist()">POKEMON!</button>
-        </div>
-        
+        </div>        
         <div id="PokemonListContainer">
             <ol id="PokemonList">
                 <!-- aqui vão os pokemons -->
