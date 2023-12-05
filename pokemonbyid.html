@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - DUDEX</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="index.html">HOME</a> |
+        <a href="pokelist.html">LISTA</a> |
+        <a href="">POKEMON POR ID</a>
+    </nav>
+    <section id="content">
+       <input id="getPokeId" type="text" placeholder="Insira o ID do pokemon!">
+       <button onclick="getpokemonbyId()" class="btn" id="searchid">PROCURAR!</button>
+    <div id="showPokemon">
+        <div id="imgcontainer">
+            <img src="" alt="" class="img-pokemon">
+            <!-- here we will had the sprite -->
+        </div>
+        <div id="namecontainer">
+            <p class="name-pokemon"></p>
+            <!-- here the name -->
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div>
+            POKEDEX - Eduardo Pereira de Queiroz
+        </div>
+        <div>
+            <img src="img/logo_selo_positivo.png" alt="logo da etec horacio">
+        </div>
+    </footer>
+</body>
+</html>
