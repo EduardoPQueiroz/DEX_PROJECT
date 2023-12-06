@@ -24,7 +24,7 @@ function showPokemonlist() {
           let liPokemonImg = document.createElement("img");
           fetch(pokemon.url).then((Response) => {
             pokemonImg = Response.json().then((pokemon) => {
-              liPokemonImg.src = pokemon.sprites.front_default;
+              liPokemonImg.src = pokemon.sprites.other["official-artwork"].front_default;
             });
           });
           liPokemon.innerHTML = pokemon.name;
@@ -51,7 +51,7 @@ function getpokemonbyId() {
         //       PokemonImg.src = pokemon.sprites.front_default;
         //     });
         //   });
-        PokemonImg.src = pokemon.sprites.front_default;
+        PokemonImg.src = pokemon.sprites.other["official-artwork"].front_default;
         PokemonName.innerHTML = pokemon.name;
       });
     }
