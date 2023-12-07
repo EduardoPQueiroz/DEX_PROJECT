@@ -2,7 +2,7 @@ BASEURL = "https://pokeapi.co/api/v2/pokemon/";
 
 function getPokemonlist() {
   let PokemonList = [];
-  fetch(BASEURL + "?limit=1010").then((Response) => {
+  fetch(BASEURL + "?limit=251").then((Response) => {
     if (Response.status == 200) {
       PokemonList = Response.json().then((json) => {
         json.results.map((pokemon) => {
@@ -14,9 +14,10 @@ function getPokemonlist() {
     }
   });
 }
+
 function showPokemonlist() {
   let listaPokemons = [];
-  fetch(BASEURL + "?limit=1010").then((Response) => {
+  fetch(BASEURL + "?limit=251").then((Response) => {
     if (Response.status == 200) {
       listaPokemons = Response.json().then((json) => {
         json.results.map((pokemon) => {
@@ -27,7 +28,11 @@ function showPokemonlist() {
               liPokemonImg.src = pokemon.sprites.other["official-artwork"].front_default;
             });
           });
-          liPokemon.innerHTML = pokemon.name;
+
+          const capitalizedPokemonName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
+
+          liPokemon.innerHTML = capitalizedPokemonName;
+          liPokemon.classList.add("pokename");
           liPokemon.appendChild(liPokemonImg);
           document.getElementById("PokemonList").appendChild(liPokemon);
         });
@@ -51,9 +56,27 @@ function getpokemonbyId() {
         //       PokemonImg.src = pokemon.sprites.front_default;
         //     });
         //   });
+        const capitalizedPokemonName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
         PokemonImg.src = pokemon.sprites.other["official-artwork"].front_default;
-        PokemonName.innerHTML = pokemon.name;
+        PokemonName.innerHTML = capitalizedPokemonName;
       });
     }
   });
 }
+
+let lastPosition = 0;
+
+document.addEventListener("scroll", function scrollHeader(){
+
+  const nav = document.querySelector("nav")
+  let actualPosition = window.scrollY
+
+  if(actualPosition > lastPosition){
+      nav.style.top = "-7em"
+  }
+  else{
+      nav.style.top = "0"
+  }
+
+  lastPosition = actualPosition
+})

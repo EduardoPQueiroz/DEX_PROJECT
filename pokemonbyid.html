@@ -14,20 +14,20 @@
         <a href="">POKEMON POR ID</a>
     </nav>
     <section id="content">
-       <input id="getPokeId" type="text" placeholder="Insira o ID do pokemon!">
-       <button onclick="getpokemonbyId()" class="btn" id="searchid">PROCURAR!</button>
-    <div id="showPokemon">
-            <div id="imgcontainer">
+        <div id="SearchContainer">
+            <input id="getPokeId" type="text" placeholder="Insira o ID do pokemon!">
+            <button onclick="getpokemonbyId()" class="btn" id="searchid">PROCURAR!</button>
+        </div>     
+       <div id="showPokemon">
+            <div id="pokemon_container">
                 <img src="" alt="" class="img-pokemon">
                 <!-- here we will had the sprite -->
-            </div>
-            <div id="namecontainer">
                 <p class="name-pokemon"></p>
                 <!-- here the name -->
             </div>
     </div>
     </section>
-    <footer>
+    <footer id="IDfooter">
         <div>
             POKEDEX - Eduardo Pereira de Queiroz
         </div>
