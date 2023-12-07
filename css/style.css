@@ -165,3 +165,527 @@ li button{
     margin-top: 30vh;
 }    
 /* fim GetPokemonbyId */
+/* Responsivity for smartphones */
+@media only screen and (max-width: 400px){
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: #F7FFF7;
+            font-family: Montserrat, sans-serif;
+        }
+        #navbar{
+            background-color: #A20021;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 2vh;
+            margin: auto;
+        }
+        #navbar a{
+            color: #F7FFF7;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+            margin: 0.3em;
+        }
+        #navbar a:focus,
+        #navbar a:hover {
+        color: #F7FFF7;
+        }
+
+        #navbar a:focus:after,
+        #navbar a:hover:after {
+        width: 100%;
+        left: 0%;
+        }
+
+        #navbar a:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #f7fff7;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+        /* fim da navbar */
+        /* title css */
+        #titlecontainer{
+            margin: 1.5em;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        /* fim do title */
+        /* footer */
+        footer{
+            background-color: #A20021;
+            font-size: 15px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 2em;
+            width: 100vw;
+            margin-top: 60vh;
+            color: #F7FFF7;
+        }
+        footer img{
+            width: 2.5em;
+        }
+        /* fim do footer */
+        /* LISTA DE POKEMONS */
+        #PokemonList{
+            display: grid;
+            grid-template: auto / 1fr;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            padding: 0;
+        }
+        li{
+            padding: 1em;
+            margin: 1.2em;
+            background-color: #A20021;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #F7FFF7;
+        }
+        li img{
+            width: 15em;
+        }
+        li button{
+            padding: 2em;
+            
+        }
+        /* FIM DA LISTA */
+        /* Começo GetPokemonbyId */
+        #pokemon_container{
+            background-color: #A20021; 
+            width: 50vw;
+            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+            color: #F7FFF7;
+            border-radius: 20px;
+        }
+        #pokemon_container img{
+            width: 12em;
+        }
+
+        #SearchContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #getPokeId{
+            margin-top: 3em;
+            margin-bottom: 3em;
+            padding: 1.5em;
+            width: 12em;
+            background-color: #F7FFF7;
+            border: none;
+            font-family: Montserrat, sans-serif;
+            border: #0C1B33 solid 0.2em;
+            border-radius: 25px;
+        }
+        .btn{
+            font-size: 16px;
+            position: relative;
+            margin: auto;
+            padding: 1em 2.5em 1em 2.5em;
+            border: none;
+            background: #A20021;
+            transition: all 0.1s linear;
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+            font-family: Montserrat, sans-serif;
+            color: #F7FFF7;
+        }
+        .btn:hover{
+            transform: scale(0.95);
+            cursor: pointer;
+            background-color: #F7FFF7;
+            border: #0C1B33 solid 1px;
+            color: #0C1B33;
+            border-radius: 20px;
+        }
+        #IDfooter{
+            margin-top: 70vh;
+        }    
+}
+/* end mobile small */
+/* start mobile large */
+@media only screen and (max-width: 600px){
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+        *{
+            margin: 0;
+        }
+        body{
+            background-color: #F7FFF7;
+            font-family: Montserrat, sans-serif;
+        }
+        #navbar{
+            background-color: #A20021;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 2vh;
+            margin: auto;
+        }
+        #navbar a{
+            color: #F7FFF7;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: color;
+            margin: 0.3em;
+        }
+        #navbar a:focus,
+        #navbar a:hover {
+        color: #F7FFF7;
+        }
+
+        #navbar a:focus:after,
+        #navbar a:hover:after {
+        width: 100%;
+        left: 0%;
+        }
+
+        #navbar a:after {
+            content: "";
+            pointer-events: none;
+            bottom: -2px;
+            left: 50%;
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: #f7fff7;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 400ms;
+            transition-property: width, left;
+        }
+        /* fim da navbar */
+        /* title css */
+        #titlecontainer{
+            margin: 1.5em;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        /* fim do title */
+        /* footer */
+        footer{
+            background-color: #A20021;
+            font-size: 15px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 2em;
+            width: 100vw;
+            margin-top: 60vh;
+            color: #F7FFF7;
+        }
+        footer img{
+            width: 2.5em;
+        }
+        /* fim do footer */
+        /* LISTA DE POKEMONS */
+        #PokemonList{
+            display: grid;
+            grid-template: auto / 1fr;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            padding: 0;
+        }
+        li{
+            padding: 1em;
+            margin: 1.2em;
+            background-color: #A20021;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #F7FFF7;
+        }
+        li img{
+            width: 15em;
+        }
+        li button{
+            padding: 2em;
+            
+        }
+        /* FIM DA LISTA */
+        /* Começo GetPokemonbyId */
+        #pokemon_container{
+            background-color: #A20021; 
+            width: 50vw;
+            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+            color: #F7FFF7;
+            border-radius: 20px;
+        }
+        #pokemon_container img{
+            width: 12em;
+        }
+
+        #SearchContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #getPokeId{
+            margin-top: 3em;
+            margin-bottom: 3em;
+            padding: 1.5em;
+            width: 12em;
+            background-color: #F7FFF7;
+            border: none;
+            font-family: Montserrat, sans-serif;
+            border: #0C1B33 solid 0.2em;
+            border-radius: 25px;
+        }
+        .btn{
+            font-size: 16px;
+            position: relative;
+            margin: auto;
+            padding: 1em 2.5em 1em 2.5em;
+            border: none;
+            background: #A20021;
+            transition: all 0.1s linear;
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+            font-family: Montserrat, sans-serif;
+            color: #F7FFF7;
+        }
+        .btn:hover{
+            transform: scale(0.95);
+            cursor: pointer;
+            background-color: #F7FFF7;
+            border: #0C1B33 solid 1px;
+            color: #0C1B33;
+            border-radius: 20px;
+        }
+        #IDfooter{
+            margin-top: 70vh;
+        }    
+}
+/* end mobile large */
+/* start Tablet responsivity */
+@media only screen and (max-width: 768px){
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+    *{
+        margin: 0;
+    }
+    body{
+        background-color: #F7FFF7;
+        font-family: Montserrat, sans-serif;
+    }
+    #navbar{
+        background-color: #A20021;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 2vh;
+        margin: auto;
+    }
+    #navbar a{
+        color: #F7FFF7;
+        cursor: pointer;
+        position: relative;
+        border: none;
+        background: none;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: color;
+        margin: 0.3em;
+    }
+    #navbar a:focus,
+    #navbar a:hover {
+    color: #F7FFF7;
+    }
+
+    #navbar a:focus:after,
+    #navbar a:hover:after {
+    width: 100%;
+    left: 0%;
+    }
+
+    #navbar a:after {
+        content: "";
+        pointer-events: none;
+        bottom: -2px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #f7fff7;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: width, left;
+    }
+    /* fim da navbar */
+    /* title css */
+    #titlecontainer{
+        margin: 1.5em;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* fim do title */
+    /* footer */
+    footer{
+        background-color: #A20021;
+        font-size: 15px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2em;
+        width: 100vw;
+        margin-top: 60vh;
+        color: #F7FFF7;
+    }
+    footer img{
+        width: 2.5em;
+    }
+    /* fim do footer */
+    /* LISTA DE POKEMONS */
+    #PokemonList{
+        display: grid;
+        grid-template: auto / 1fr;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        padding: 0;
+    }
+    li{
+        padding: 1em;
+        margin: 1.2em;
+        background-color: #A20021;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F7FFF7;
+    }
+    li img{
+        width: 15em;
+    }
+    li button{
+        padding: 2em;
+        
+    }
+    /* FIM DA LISTA */
+    /* Começo GetPokemonbyId */
+    #pokemon_container{
+        background-color: #A20021; 
+        width: 50vw;
+        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+        color: #F7FFF7;
+        border-radius: 20px;
+    }
+    #pokemon_container img{
+        width: 12em;
+    }
+
+    #SearchContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #getPokeId{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        padding: 1.5em;
+        width: 12em;
+        background-color: #F7FFF7;
+        border: none;
+        font-family: Montserrat, sans-serif;
+        border: #0C1B33 solid 0.2em;
+        border-radius: 25px;
+    }
+    .btn{
+        font-size: 16px;
+        position: relative;
+        margin: auto;
+        padding: 1em 2.5em 1em 2.5em;
+        border: none;
+        background: #A20021;
+        transition: all 0.1s linear;
+        box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+        font-family: Montserrat, sans-serif;
+        color: #F7FFF7;
+    }
+    .btn:hover{
+        transform: scale(0.95);
+        cursor: pointer;
+        background-color: #F7FFF7;
+        border: #0C1B33 solid 1px;
+        color: #0C1B33;
+        border-radius: 20px;
+    }
+    #IDfooter{
+        margin-top: 70vh;
+    }    
+}     
+/* end Tablet */
+/* start small screen responsivity */
+@media only screen and (max-width: 950px){
+
+}
+/* end small screen responsivity */
