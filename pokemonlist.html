@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME - DUDEX</title>
+    <title>LISTA - DUDEX</title>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="showPokemonlist()">
     <nav id="navbar">
-        <a href="">HOME</a> |
-        <a href="pokemonlist.html">LISTA</a> |
+        <a href="index.html">HOME</a> |
+        <a href="">LISTA</a> |
         <a href="pokemonbyid.html">POKEMON POR ID</a>
     </nav>
     <section id="content">
         <div id="titlecontainer">
-            <h1 id="title">Esse trabalho foi desenvolvido com o objetivo de utilizar o javascript para consumir uma API</h1>
-            <p>Nas demais páginas você pode observar uma lista de pokemons, e um buscador por ID de pokemons.</p>
+            <h1 id="title">POKEDEX</h1>
+        </div>        
+        <div id="myteam_container">
+            <ol id="myteam">
+                <!-- aqui vão ospokemons adicionados ao myteam -->
+            </ol>
+        </div>
+        <div id="PokemonListContainer">
+            <ol id="PokemonList">
+                <!-- aqui vão os pokemons -->
+            </ol>
         </div>
     </section>
     <footer>
-        <div>
+        <div id="autor">
             POKEDEX - Eduardo Pereira de Queiroz
         </div>
-        <div>
+        <div id="eteclogo">
             <img src="img/logo_selo_positivo.png" alt="logo da etec horacio">
         </div>
     </footer>
