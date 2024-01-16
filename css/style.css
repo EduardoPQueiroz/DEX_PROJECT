@@ -81,7 +81,7 @@ footer img{
 /* LISTA DE POKEMONS */
 #PokemonList{
     display: grid;
-    grid-template: auto / 1fr 1fr 1fr;
+    grid-template: auto / 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -99,7 +99,7 @@ li{
     color: #F7FFF7;
 }
 li img{
-    width: 23em;
+    width: 8em;
 }
 li button{
     padding: 2em;
@@ -253,7 +253,7 @@ li button{
     /* LISTA DE POKEMONS */
     #PokemonList{
         display: grid;
-        grid-template: auto / 1fr 1fr;
+        grid-template: auto / 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -271,7 +271,7 @@ li button{
         color: #F7FFF7;
     }
     li img{
-        width: 17em;
+        width: 6em;
     }
     li button{
         padding: 2em;
@@ -426,7 +426,7 @@ li button{
     /* LISTA DE POKEMONS */
     #PokemonList{
         display: grid;
-        grid-template: auto / 1fr 1fr;
+        grid-template: auto / 1fr 1fr 1fr 1fr;
         justify-content: center;
         align-items: center;
         justify-items: center;
@@ -444,7 +444,7 @@ li button{
         color: #F7FFF7;
     }
     li img{
-        width: 15em;
+        width: 6em;
     }
     li button{
         padding: 2em;
@@ -597,7 +597,7 @@ li button{
         /* LISTA DE POKEMONS */
         #PokemonList{
             display: grid;
-            grid-template: auto / 1fr;
+            grid-template: auto / 1fr 1fr;
             justify-content: center;
             align-items: center;
             justify-items: center;
@@ -615,7 +615,7 @@ li button{
             color: #F7FFF7;
         }
         li img{
-            width: 15em;
+            width: 6em;
         }
         li button{
             padding: 2em;

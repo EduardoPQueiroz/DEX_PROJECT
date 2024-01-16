@@ -80,3 +80,10 @@ document.addEventListener("scroll", function scrollHeader(){
 
   lastPosition = actualPosition
 })
+
+function verifykey(event) {
+  // Verifica se a tecla pressionada é Enter (código 13)
+  if (event.keyCode === 13) {
+    getpokemonbyId();
+  }
+}
